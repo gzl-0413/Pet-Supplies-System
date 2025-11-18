@@ -1,0 +1,71 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 31 Mar 2024, 3:30:16 pm
+    Author     : Rong
+*/
+
+body, html {
+    margin: 0;
+    padding: 0;
+}
+footer p{
+    margin: 0;
+    font-family: sans-serif;
+ }
+ 
+ footer {
+     transition: 0.3s;
+     color: white;
+     background-color: #22c55e;
+     width:100%;
+     font-weight: 500;
+ }
+ 
+ .link p{
+     margin: 5px 0;
+ }
+ 
+ .container-all{
+     display: grid;
+     grid-template-columns: repeat(2, minmax(0, 1fr));
+     gap:8px;
+     justify-items: center;
+     width: 40%;
+     margin: 0 auto;
+     padding-top: 12px;
+ }
+ 
+ .footer-1{
+     width:100%;
+ }
+ 
+ .footer-2{
+     width:fit-content;
+ 
+ }
+ 
+ .footer-1 p a, .footer-2 p a{
+     color: white;
+     text-decoration: none;
+ }
+ 
+ .footer-2 p a i{
+     padding: 0 6px;
+ }
+ 
+ .footer-1 p a:hover, .footer-2 p a:hover{
+     transition: 0.3s;
+     color: black;
+ }
+ 
+ @media (max-width: 960px) {
+     .container-all{
+         grid-template-columns: repeat(1, minmax(0, 1fr));
+     }
+     .footer-2{
+         width: 100%;
+     }
+ }

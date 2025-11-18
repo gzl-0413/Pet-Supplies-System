@@ -1,0 +1,226 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 4 Apr 2024, 3:20:53 pm
+    Author     : Rong
+*/
+
+body {
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    background-image: url("../Images/login.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 20px;
+}
+
+.login-container {
+    width: 100%;
+    max-width: 450px;
+}
+
+.login-card {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+.login-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+}
+
+.login-header,
+.register {
+    text-align: center;
+}
+
+.login-header h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.login-tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.tab-button {
+    background: none;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-bottom: 2px solid transparent;
+}
+
+.tab-button.active {
+    border-bottom: 2px solid #007bff;
+    color: #007bff;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-item {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 15px; /* Adjust this value as needed */
+    cursor: pointer;
+    z-index: 1; /* Ensure the icon is above the input field */
+}
+
+.toggle-password i {
+    font-size: 18px;
+    color: #888;
+}
+#memberLoginForm .form-item .email,
+#memberLoginForm .form-item .password{
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+#adminLoginForm .form-item .email,
+#adminLoginForm .form-item .password{
+    position: absolute;
+    top: 42%;
+    left: 15px;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+    width: 85%;
+    padding: 12px 3px 12px 45px;
+    border: 1px solid #ddd;
+    border-radius: 25px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.login-form input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+}
+
+.form-other {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.login-card a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.login-card a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+.form-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.login-form button {
+    flex: 1;
+    padding: 12px;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.login-form button[type="submit"] {
+    background-color: #007bff;
+    color: white;
+}
+
+.login-form button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.login-form button[type="reset"] {
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+.login-form button[type="reset"]:hover {
+    background-color: #e2e6ea;
+}
+
+.register {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.hidden {
+    display: none;
+}
+
+.err {
+    color: #dc3545;
+    font-size: 14px;
+    margin-top: 5px;
+    display: block;
+    text-align: left;
+    width: 100%;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+#memberLoginForm, #adminLoginForm {
+    animation: fadeIn 0.3s ease;
+}
+
+@media (max-width: 768px) {
+    .login-container {
+        padding: 20px;
+    }
+
+    .login-card {
+        padding: 30px;
+    }
+}
+

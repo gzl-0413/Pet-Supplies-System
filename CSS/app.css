@@ -1,0 +1,642 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* General Body Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    padding-left: 0%; /* Adjust based on the width of your navigation */
+    background-color: #f7f9fc;
+}
+
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+/* Header */
+header {
+    background: #2c3e50;
+    color: #fff;
+    padding: 30px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    letter-spacing: 1px;
+}
+
+/* Navigation */
+nav {
+    margin: 20px auto; /* Center the navigation horizontally */
+    width: 80%; /* Match the table width */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 15px; /* Reduced margin for better alignment */
+}
+
+nav ul li a {
+    color: #ecf0f1;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.1em;
+    transition: color 0.3s, border-bottom 0.3s;
+    border-bottom: 2px solid transparent;
+    padding-bottom: 5px;
+}
+
+nav ul li a:hover {
+    color: #3498db;
+    border-bottom: 2px solid #3498db;
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between; /* Ensure spacing between items */
+    gap: 15px; /* Adds space between elements */
+    margin: 20px auto; /* Center the form horizontally */
+    width: 80%; /* Adjust as needed */
+    background-color: #fff; /* Ensure background color for the form */
+    padding: 20px; /* Optional: Add padding for better spacing */
+    border-radius: 12px; /* Optional: Match table border radius */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for better visibility */
+}
+
+/* Ensure each form group takes up a reasonable amount of space */
+.form-groups {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Adjusts the space between the label and input */
+    flex: 1; /* Allows the form group to grow and shrink as needed */
+}
+
+/* Style for form labels */
+.form-groups label {
+    margin-bottom: 0; /* Removes any bottom margin on the label */
+    white-space: nowrap; /* Prevents label text from wrapping to the next line */
+    flex: 1; /* Allows labels to take up space */
+    font-weight: 700;
+    font-size: 1.1em;
+    color: #2c3e50;
+}
+
+/* Style for input fields and selects */
+input[type="text"],
+select,
+input[type="number"] {
+    flex: 2; /* Takes up more space */
+    padding: 12px;
+    border: 1px solid #bdc3c7;
+    border-radius: 8px;
+    box-sizing: border-box;
+    width: 100%; /* Ensures the inputs take full available width */
+}
+.upload-btn{
+    width: 95%;
+    text-align: center;
+}
+
+ textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+
+
+.upload-btn,
+button {
+    flex: 1;
+    background: #3498db;
+    color: #fff;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 700;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+.form-actions {
+    display: flex;
+    flex-direction: column; /* Align children vertically */
+    align-items: flex-start; /* Align items to the start (left) */
+    gap: 10px; /* Space between the buttons */
+    margin-top: 10px; /* Optional: add space above the container */
+}
+button:hover {
+    background: #2980b9;
+    transform: translateY(-2px);
+}
+
+button[type="reset"] {
+    background: #fc4343;
+}
+
+button[type="reset"]:hover {
+    background: #aa2d2d;
+}
+
+.delete-btn {
+    background-color: #fc4343;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.delete-btn:hover {
+    background-color: #aa2d2d;
+}
+
+.submit-btn {
+    background: #30b33b;
+}
+
+.submit-btn:hover {
+    background: #1e9424;
+}
+
+.update-stock-btn {
+    background: #30b33b;
+}
+
+.update-stock-btn:hover {
+    background: #1e9424;
+}
+
+
+/* Error Messages */
+.error {
+    color: #e74c3c;
+    font-size: 0.9em;
+}
+
+/* Table Styles */
+table {
+    width: 80%; /* Adjust the width as needed */
+    border-collapse: collapse;
+    margin: 20px auto; /* Center the table horizontally */
+    background-color: #fff; /* Ensure background color for the table */
+    border-radius: 12px; /* Make the corners more rounded */
+    overflow: hidden; /* Ensure border-radius is applied correctly */
+}
+
+table th,
+table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+table th {
+    background: #dfe0e2;
+    color: #000000; /* White font for table headers */
+    font-weight: 700;
+    position: relative;
+}
+
+table tr:nth-child(even) {
+    background: #f9f9f9;
+}
+
+table tr:hover {
+    background: #f1f1f1;
+}
+
+/* Pagination Styles */
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    list-style: none;
+    padding: 0;
+}
+
+/* Pagination Items */
+.pagination li {
+    margin: 0 5px;
+    display: flex;
+    align-items: center; /* Align items vertically */
+}
+
+/* Pagination Links */
+.pagination a, .pagination span {
+    display: block;
+    padding: 10px 15px;
+    background: #3498db;
+    color: #fff;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+/* Pagination Links Hover State */
+.pagination a:hover {
+    background: #2980b9;
+    transform: translateY(-2px);
+}
+
+/* Active Page Link */
+.pagination .active span {
+    background: #2c3e50;
+    cursor: default;
+    transform: none;
+}
+
+/* Disabled Pagination Link */
+.pagination .disabled a {
+    background: #bdc3c7;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+/* Ellipsis */
+.pagination .ellipsis {
+    display: flex;
+    align-items: center;
+    font-size: 1.2em;
+    padding: 10px 15px;
+    color: #3498db;
+}
+
+
+/* Button Styles for Table Actions */
+.table-button {
+    display: inline-block;
+    background: #30b33b;
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 8px;
+    font-size: 0.9em;
+    font-weight: 700;
+    text-decoration: none;
+    text-align: center;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.table-button:hover {
+    background: #1e9424;
+    transform: translateY(-2px);
+}
+
+.table-button.delete {
+    background: #e74c3c;
+}
+
+.table-button.delete:hover {
+    background: #c0392b;
+}
+
+/* Product Stock Handling */
+.stock {
+    font-size: 1em;
+    font-weight: 700;
+    color: #2c3e50;
+}
+
+.low-stock {
+    color: #e74c3c;
+    font-weight: 700;
+}
+
+/* Alert Messages */
+.alert {
+    background: #f9c2c2;
+    border-left: 5px solid #e74c3c;
+    padding: 15px;
+    border-radius: 8px;
+    margin: 10px 0;
+}
+
+.alert.success {
+    background: #d4edda;
+    border-left: 5px solid #28a745;
+}
+
+.alert.info {
+    background: #d1ecf1;
+    border-left: 5px solid #17a2b8;
+}
+
+.alert.warning {
+    background: #fff3cd;
+    border-left: 5px solid #ffc107;
+}
+
+/* Record Listing (Table View + Photo View) */
+.view-switcher {
+    margin: 20px auto;
+    text-align: center;
+}
+
+.view-switcher button {
+    background: #3498db;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 1em;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.view-switcher button.active {
+    background: #2980b9;
+}
+
+.view-switcher button:hover {
+    background: #2980b9;
+}
+
+/* Product Filtering */
+.filter {
+    margin: 20px auto;
+    width: 80%;
+}
+
+.filter label {
+    margin-right: 10px;
+}
+
+.filter select {
+    width: 150px;
+}
+
+/* Multiple Photos Upload */
+.upload-multiple {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.upload-multiple input[type="file"] {
+    border: 1px solid #bdc3c7;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.upload-multiple .photo-preview {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.upload-multiple .photo-preview img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+/* Product Photos Sliders */
+.slider {
+    position: relative;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+.slider img {
+    width: 100%;
+    height: auto;
+}
+
+.slider-controls {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.slider-controls button {
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* Drag-and-Drop Photo Upload */
+.drag-drop {
+    border: 2px dashed #3498db;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    background: #f1f1f1;
+    cursor: pointer;
+}
+
+.drag-drop:hover {
+    background: #e9f3f9;
+}
+
+/* Batch Insertion/Updating/Deletion */
+.batch-operation {
+    margin: 20px auto;
+    width: 80%;
+}
+
+.batch-operation input[type="file"],
+.batch-operation button {
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* Category Dropdown */
+select[name="category"] {
+    width: 100%; /* Ensure it takes up full width */
+    padding: 12px;
+    border: 1px solid #bdc3c7;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+#upload-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns for name and photo */
+    gap: 10px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 2px dashed #ccc;
+}
+
+form div {
+    text-align: center;
+}
+
+#drop-zone {
+    border: 2px dashed #ccc;
+    padding: 10px;
+    background-color: #fafafa;
+    cursor: pointer;
+    transition: border 0.3s ease;
+    width: 100%; /* Ensure full width */
+    box-sizing: border-box; /* Include padding in width */
+}
+
+#drop-zone.drag-over {
+    border-color: green;
+}
+
+/* Styles specific to the edit.php form */
+.edit-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal-width columns */
+    gap: 20px; /* Space between the form fields */
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 2px dashed #ccc;
+    background-color: #fff;
+    border-radius: 12px;
+}
+
+/* Ensure each form label and input field take full width in edit.php */
+.edit-form label {
+    grid-column: span 2; /* Makes labels span across both columns */
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-align: center; /* Center the text */
+}
+
+.edit-form input[type="text"],
+.edit-form input[type="number"],
+.edit-form input[type="file"],
+.edit-form select,
+.edit-form textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    grid-column: span 2; /* Makes inputs span across both columns */
+}
+
+/* Specific style for the image preview and file input in edit.php */
+.edit-form .upload {
+    grid-column: 1 / span 2; /* Make the upload section span across both columns */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+}
+
+/* Style for the image preview in edit.php */
+.edit-form #photo-preview {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+/* Button styles in edit.php */
+.edit-form section {
+    grid-column: span 2; /* Buttons take up the full width below form fields */
+    display: flex;
+    justify-content: center; /* Center the buttons horizontally */
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.edit-form button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    flex: 0 1 auto; /* Prevents stretching */
+}
+
+.edit-form button:hover {
+    background-color: #45a049;
+}
+
+/* Reset button styling in edit.php */
+.edit-form button[type="reset"] {
+    background-color: #f44336;
+}
+
+.edit-form button[type="reset"]:hover {
+    background-color: #e53935;
+}
+
+#drop-area {
+    width: 100%;
+    height: 150px;
+    border: 2px dashed #4CAF50;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 10px;
+    background-color: #f9f9f9;
+}
+
+#drop-area.dragging {
+    border-color: #3e8e41;
+}
+
+#drop-area p {
+    margin: 0;
+    font-size: 16px;
+    color: #666;
+}
+
+
+.notification {
+    display: none; /* Default to hidden */
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    z-index: 1000;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.notification.visible {
+    display: block;
+}
+
+.notification.hidden {
+    opacity: 0;
+}

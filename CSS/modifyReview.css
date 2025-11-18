@@ -1,0 +1,144 @@
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.container h1 {
+    text-align: center;
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+p {
+    margin-bottom: 20px;
+    font-size: 1em;
+    color: #555;
+}
+
+input[type="text"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 1em;
+    color: #333;
+    background-color: #f7f7f7;
+}
+
+select {
+    appearance: none;
+    padding: 10px;
+    background: url('../images/dropdown-arrow.png') no-repeat right 10px center;
+    background-color: white;
+    border: 1px solid #ccc;
+}
+
+textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+.form-buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+button.submit-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+    width: 48%;
+}
+
+button.submit-btn:hover {
+    background-color: #0056b3;
+}
+
+button.cancel-btn {
+    background-color: #f44336;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+    width: 48%;
+}
+
+button.cancel-btn:hover {
+    background-color: #d32f2f;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    .form-buttons {
+        flex-direction: column;
+    }
+
+    button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    button:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.stars {
+    display: flex;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.star {
+    font-size: 2em;
+    color: lightgray;
+}
+
+.star.filled {
+    color: gold;
+}
+
+.existing-photos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.photo-preview img {
+    max-width: 150px;
+    height: auto;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.new-photos-preview {
+    margin-bottom: 20px;
+}

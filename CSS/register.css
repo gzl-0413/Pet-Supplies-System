@@ -1,0 +1,257 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 4 Apr 2024, 3:20:53 pm
+    Author     : Rong
+*/
+
+body {
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    background-image: url("../Images/pet.jpg");
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.register-card {
+    margin: 80px auto;
+    width: 650px;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 64px;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 5px 5px 30px black;
+}
+
+.register-header,
+.login {
+    text-align: center;
+}
+
+.register-card a {
+    text-decoration: none;
+    color: darkblue;
+}
+
+.register-card a:hover {
+    text-decoration: underline;
+}
+
+.register-header {
+    margin-bottom: 32px;
+}
+
+.register-header h1 {
+    font-size: 32px;
+    margin-bottom: 8px;
+    opacity: 0.8;
+}
+
+.register-form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.register-form .form-item {
+    position: relative;
+}
+
+.register-form .form-item .usericon,
+.register-form .form-item .birthdateicon,
+.register-form .form-item .addressicon,
+.register-form .form-item .contacticon,
+.register-form .form-item .emailicon,
+.register-form .form-item .passwordicon {
+    position: absolute;
+    top: 13px;
+    left: 22px;
+    font-size: 20px;
+    opacity: 0.4;
+}
+
+.register-form .form-item .pswcheck {
+    position: absolute;
+    top: 13px;
+    right: 20px;
+    font-size: 20px;
+}
+
+.register-form .checkbox {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.register-form .form-other {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.login {
+    margin-top: 24px;
+    font-size: 14px
+}
+
+
+.register-card input {
+    border: 1px solid rgb(220, 153, 153);
+    box-shadow: 1px 1px 5px;
+    outline: none;
+    background: rgba(255, 255, 255, 0.3);
+    padding: 16px 24px;
+    border-radius: 100px;
+    padding-left: 55px;
+    width: 87%;
+    transition: background 0.5s;
+}
+
+
+
+.register-card .form-item .firstname:focus {
+    background: white;
+    transition: 0.5s;
+}
+
+.register-card input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+}
+
+.register-form button {
+    padding: 16px;
+    border-radius: 100px;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+.register-form button:hover {
+    background: black;
+    color: white;
+    transition: 0.5s;
+}
+
+.err {
+    font-size: 13px;
+    color: red;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.feedback {
+    font-size: 13px;
+    font-weight: bold;
+    margin-top: 5px;
+    display: block;
+}
+
+.feedback.valid {
+    color: green;
+}
+
+.feedback.invalid {
+    color: red;
+}
+
+input.valid {
+    border: 2px solid green;
+}
+
+input.invalid {
+    border: 2px solid red;
+}
+
+input {
+    transition: border-color 0.3s ease;
+}
+
+.feedback.valid::before {
+    content: '✔ ';
+}
+
+.feedback.invalid::before {
+    content: '✖ ';
+}
+
+.form-item {
+    position: relative;
+}
+
+.form-item input[type="password"],
+.form-item input[type="text"] {
+    flex-grow: 1;
+    padding-right: 35px; 
+}
+
+.toggle-password {
+    position: absolute;
+    right: 20px;
+    top: 7%;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.toggle-password i {
+    font-size: 18px;
+    color: #888;
+}
+
+#passwordFeedback span {
+    display: block;
+    font-size: 13px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+#passwordFeedback span.valid {
+    color: green;
+}
+
+#passwordFeedback span.invalid {
+    color: red;
+}
+
+#passwordFeedback.feedback.invalid::before {
+    content: none;
+}
+
+#passwordFeedback.feedback.valid::before {
+    content: none;
+}
+
+label.upload img {
+    display: block;
+    border: 1px solid #333;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .register-card {
+        width: 100%;
+        padding: 32px;
+    }
+
+    .register-card input {
+        width: 75%;
+    }
+
+    .register-card h1 {
+        font-size: 28px;
+    }
+
+    .register-form .form-item {
+        flex-direction: column;
+    }
+
+
+}

@@ -1,0 +1,107 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1000px; /* Adjusted for better layout */
+    margin: 50px auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.reviews {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    gap: 20px; /* Space between boxes */
+}
+
+.review {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.review h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #f39c12;
+}
+
+.review p {
+    margin: 5px 0;
+    color: #555;
+}
+
+.review .date {
+    color: #888;
+    font-size: 14px;
+}
+
+.review img {
+    max-width: 100px;
+    margin-right: 10px;
+}
+
+.review-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.review-buttons button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.review-buttons button.view {
+    background-color: #007bff;
+    color: white;
+}
+
+.review-buttons button.modify {
+    background-color: #28a745;
+    color: white;
+}
+
+.review-buttons button.delete {
+    background-color: #dc3545;
+    color: white;
+}
+
+.review-buttons button:hover {
+    opacity: 0.9;
+}
+
+.no-reviews {
+    text-align: center;
+    color: #666;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.no-reviews-container {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    margin-top: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+

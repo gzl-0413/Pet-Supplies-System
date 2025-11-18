@@ -1,0 +1,169 @@
+
+       .tab {
+            display: flex;
+            justify-content: space-around;
+            background-color: #f1f1f1;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        .tab button {
+            background-color: inherit;
+            border: none;
+            outline: none;
+            padding: 10px 20px;
+            transition: background-color 0.3s;
+            font-size: 16px;
+        }
+
+        .tab button:hover {
+            background-color: #ddd;
+        }
+
+        .tab button.active {
+            background-color: #ccc;
+            font-weight: bold;
+        }
+
+        .tab-content {
+            display: none;
+            padding: 20px;
+            border: 1px solid #ccc;
+            margin-top: -1px;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        /* Styling for order list */
+        .order-list {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        .order-list th,
+        .order-list td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        .order-list th {
+            background-color: #f2f2f2;
+        }
+
+        .product-image-order {
+            width: 60px;
+            height: 60px;
+            object-fit: cover;
+            border-radius: 4px;
+            margin-right: 10px;
+        }
+
+        .product-info {
+            display: flex;
+            align-items: center;
+        }
+.update-button,        
+.cancel-button,
+.review-button,
+.reviews-button,
+.buy-again-button {
+    display: inline-block;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    background-color: #28a745; /* Green for Buy Again */
+    border-radius: 4px;
+    margin-left: 10px;
+    font-size: 14px;
+}
+
+.update-button:hover,
+.review-button:hover {
+    background-color: #218838; /* Darker green for hover */
+}
+
+ 
+.buy-again-button {
+    background-color: #007bff; /* Blue for Buy Again */
+}
+
+.buy-again-button:hover {
+    background-color: #0056b3; /* Darker blue for hover */
+}
+
+.cancel-button:hover {
+    background-color: #90254c; /* Blue for Buy Again */
+}
+
+.cancel-button {
+    background-color: #b93350; /* Darker green for hover */
+}
+.reviews-button:hover {
+    background-color: #5b8ee1; /* Blue for Buy Again */
+}
+.reviews-button {
+    background-color: #34bcbc; /* Blue for Buy Again */
+}
+ 
+/* Remove bold from tab titles */
+.tab-content h3 {
+    font-weight: normal;
+    font-size: 16px;
+}
+
+/* Table layout adjustments */
+table.order-list {
+    width: 100%; /* Full width */
+    border-collapse: collapse;
+}
+
+table.order-list th, table.order-list td {
+    padding: 10px 15px;
+    font-size: 14px;
+}
+
+table.order-list tr {
+    height: 40px;
+}
+
+.update-button:hover
+.cancel-button,
+.review-button,
+.reviews-button,
+.buy-again-button {
+    margin-right: 10px; /* Add space between buttons */
+    padding: 5px 10px;
+}
+
+/* Modal spacing (if applicable) */
+.modal-content {
+    padding: 20px;
+    max-width: 90%;
+}
+
+.modal-header h3 {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+ 
+.view-details {
+    display: inline-block;
+    padding: 8px 12px;             
+    background-color: #007bff;      
+    color: #fff;                    
+    text-decoration: none;         
+    border-radius: 5px;             
+    transition: background-color 0.3s ease;  
+    font-size: 14px;               
+    margin-right: 5px;              
+}
+
+.view-details:hover {
+    background-color: #0056b3;      
+    color: #fff;                   
+}

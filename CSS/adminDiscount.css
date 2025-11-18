@@ -1,0 +1,372 @@
+/* General container styling */
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Search Container Styling */
+.search-container {
+    
+    align-items: center;
+    gap: 10px;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+}
+
+.search-container input[type="text"],
+.search-container input[type="date"] {
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.edit-btn, .delete-btn {
+    padding: 5px 10px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 0.9em;
+}
+
+.edit-btn {
+    background-color: #28a745;
+}
+
+.delete-btn {
+    background-color: #dc3545;
+}
+
+.edit-btn:hover {
+    background-color: #218838;
+}
+
+.delete-btn:hover {
+    background-color: #c82333;
+}
+
+/* Table Styling */
+#reviewTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+#reviewTable th, #reviewTable td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+#reviewTable th {
+    background-color: #f8f8f8;
+    color: #333;
+    cursor: pointer;
+}
+
+#reviewTable tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+.sort-link {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.sort-link:hover {
+    color: #007bff;
+}
+
+/* Action Button Styling */
+.action-buttons {
+    display: flex;
+    gap: 5px;
+}
+
+.action-buttons a {
+    text-decoration: none;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 3px;
+    font-size: 0.9em;
+}
+
+/* Modal Styling */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 60%;
+    border-radius: 8px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: #000;
+}
+
+textarea.reply-message {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.send-reply-btn {
+    padding: 8px 16px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.send-reply-btn:hover {
+    background-color: #218838;
+}
+
+/* Pagination Controls */
+.pagination-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#pagination {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+#pagination li {
+    margin: 0 5px;
+}
+
+#pagination li a {
+    display: block;
+    padding: 5px 10px;
+    color: #007bff;
+    text-decoration: none;
+    border-radius: 3px;
+}
+
+#pagination li.active a {
+    background-color: #007bff;
+    color: white;
+}
+
+#pagination li a:hover {
+    background-color: #0056b3;
+    color: white;
+}
+
+/* Dropdown for rows per page */
+#rowsPerPage {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+    #reviewTable th, #reviewTable td {
+        padding: 5px;
+    }
+    .search-container {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+}
+/* General container for the add form */
+.add-form-container {
+    width: 50%;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.add-form-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+/* Styling for the form */
+.add-form-group {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.add-form-group label {
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.add-form-group input[type="text"],
+.add-form-group input[type="number"],
+.add-form-group input[type="date"],
+.add-form-group select {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+}
+
+.add-form-group select {
+    height: 40px;
+}
+
+.add-form-group input[type="text"]:focus,
+.add-form-group input[type="number"]:focus,
+.add-form-group input[type="date"]:focus,
+.add-form-group select:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.2);
+}
+
+.add-feedback {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+    display: none; /* Hide by default, can be shown via JS validation */
+}
+
+/* Button group styling */
+.add-button-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.add-update-button,
+.add-cancel-button {
+    padding: 10px 20px;
+    font-size: 14px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    width: 48%; /* Ensures both buttons are the same size */
+}
+
+.add-update-button {
+    background-color: #28a745;
+    color: #fff;
+}
+
+.add-update-button:hover {
+    background-color: #218838;
+}
+
+.add-cancel-button {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+.add-cancel-button:hover {
+    background-color: #c82333;
+}
+
+/* Style for mobile responsiveness */
+@media (max-width: 768px) {
+    .add-form-container {
+        width: 90%;
+    }
+
+    .add-button-group {
+        flex-direction: column;
+    }
+
+    .add-update-button,
+    .add-cancel-button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+ 
+ 
+  .checkbox-wrapper-25 input[type="checkbox"] {
+    background-image: -webkit-linear-gradient(hsla(0,0%,0%,.1), hsla(0,0%,100%,.1)),
+                      -webkit-linear-gradient(left, #f66 50%, #6cf 50%);
+    background-size: 100% 100%, 200% 100%;
+    background-position: 0 0, 15px 0;
+    border-radius: 25px;
+    box-shadow: inset 0 1px 4px hsla(0,0%,0%,.5),
+                inset 0 0 10px hsla(0,0%,0%,.5),
+                0 0 0 1px hsla(0,0%,0%,.1),
+                0 -1px 2px 2px hsla(0,0%,0%,.25),
+                0 2px 2px 2px hsla(0,0%,100%,.75);
+    cursor: pointer;
+    height: 25px;
+    padding-right: 25px;
+    width: 75px;
+    -webkit-appearance: none;
+    -webkit-transition: .25s;
+}
+.checkbox-wrapper-25 input[type="checkbox"]:after {
+    background-color: #eee;
+    background-image: -webkit-linear-gradient(hsla(0,0%,100%,.1), hsla(0,0%,0%,.1));
+    border-radius: 25px;
+    box-shadow: inset 0 1px 1px 1px hsla(0,0%,100%,1),
+                inset 0 -1px 1px 1px hsla(0,0%,0%,.25),
+                0 1px 3px 1px hsla(0,0%,0%,.5),
+                0 0 2px hsla(0,0%,0%,.25);
+    content: '';
+    display: block;
+    height: 25px;
+    width: 50px;
+}
+.checkbox-wrapper-25 input[type="checkbox"]:checked {
+    background-position: 0 0, 35px 0;
+    padding-left: 25px;
+    padding-right: 0;
+}
+

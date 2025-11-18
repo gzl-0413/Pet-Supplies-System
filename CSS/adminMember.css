@@ -1,0 +1,234 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.table-container {
+    width: 90%;
+    margin: 20px 120px;
+    overflow-x: auto;
+}
+
+.table-heading {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 10px;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #d3d3d3;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.search-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#searchInput, #startDate, #endDate {
+    width: 18%;
+    padding: 10px;
+    font-size: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 0 10px;
+}
+
+.pagination-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#rowsPerPage {
+    padding: 5px;
+    font-size: 16px;
+}
+
+#pagination {
+    display: flex;
+    list-style: none;
+}
+
+#pagination li {
+    margin: 0 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+}
+
+#pagination li.active {
+    background-color: #007bff;
+    color: white;
+    border-color: #007bff;
+}
+
+#pagination li a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.edit-btn, .delete-btn, .add-btn {
+    padding: 5px 10px;
+    margin: 0 5px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.add-btn {
+    background-color: #2168ff;
+    color: white;
+}
+
+a.add-btn {
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.delete-btn {
+    background-color: #f44336;
+    color: white;
+}
+
+.action-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1px;
+}
+
+.action-buttons button,
+.action-buttons a {
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+.edit-btn {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.edit-btn:hover {
+    background-color: #45a049;
+}
+
+.delete-btn {
+    background-color: #f44336;
+    color: white;
+}
+
+.delete-btn:hover {
+    background-color: #d32f2f; 
+}
+
+.profilepic-column {
+    text-align: center;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    margin-right: 30px;
+}
+
+.switch input {
+    display: none;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 34px;
+    height: 50px;
+    width: 85px;
+}
+
+.slider::before {
+    position: absolute;
+    content: "";
+    height: 40px;
+    width: 50px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    color: black;
+    padding-bottom: 2px;
+}
+
+input:checked + .slider {
+    background-color: #2196F3;
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
+
+.slider.round:before {
+    content: "Block";
+}
+
+input:checked + .slider.round:before {
+    content: "Verified";
+}
+
+.sort-link {
+    text-decoration: none;
+    color: #000;
+    margin-right: 5px;
+    display: inline-block;
+}
+
+.sort-link:hover {
+    color: #007bff;
+}
+
+th {
+    cursor: pointer;
+}
